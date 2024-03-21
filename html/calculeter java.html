@@ -1,0 +1,66 @@
+<html>
+   <head>
+      <title>calculetr</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/calculeter.css">
+   </head>
+   <body>      
+        <div class="container">
+            <div class="calculetr">
+                <form>
+                        <div class="display">
+                            <input type="text" name="display" id="screan">
+                        </div>
+                        <div>
+                            <input type="button" value="7" onclick="displa(value)">
+                            <input type="button" value="8" onclick="displa(value)">
+                            <input type="button" value="9" onclick="displa(value)">
+                            <input type="button" value="DEL" onclick="dlte(value)">
+                        </div>
+                        <div>
+                            <input type="button" value="4" onclick="displa(value)">
+                            <input type="button" value="5" onclick="displa(value)">
+                            <input type="button" value="6" onclick="displa(value)">
+                            <input type="button" value="AC" onclick="cler(value)">
+                        </div>
+                        <div>
+                            <input type="button" value="1" onclick="displa(value)">
+                            <input type="button" value="2" onclick="displa(value)">
+                            <input type="button" value="3" onclick="displa(value)">
+                            <input type="button" value="/" onclick="displa(value)">
+                        </div>
+                        <div>
+                            <input type="button" value="*" onclick="displa(value)">
+                            <input type="button" value="0" onclick="displa(value)">
+                            <input type="button" value="+" onclick="displa(value)">
+                            <input type="button" value="-" onclick="displa(value)">
+                        </div>
+                        <div>
+                            <input type="button" value="." onclick="displa(value)">
+                            <input type="button" value="=" onclick="reslt(value)">
+                            <input type="button" value="EXP">
+                            <input type="button" value="Ans">
+                        </div>
+                </form>
+            </div>
+        </div>
+    </body>
+<script>
+    var screan =document.getElementById('screan');
+    function displa(value){
+        screan.value += value;
+    }
+    function reslt(){
+        var ans = eval(screan.value);
+        screan.value=ans;
+    }
+    function cler(){
+        screan.value="";
+    }
+    function dlte(){
+        screan.value = screan.value.toString().slice(0, -1);
+    }
+
+</script>
+</html>  

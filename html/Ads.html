@@ -1,0 +1,567 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+          <link rel="stylesheet" type="text/css" href="css/Ads.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- BS -->
+        <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+    <!-- over -->
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <!-- over -->
+  
+    </head>
+    <body style=" background-color:rgba(0, 0, 255, 0.1);">
+        <div class="dash_bor_sec1">
+       
+            <div class="dash_bor_sdbr" id="dashsidebar">
+          
+                <header id="header">
+              <div class="d-flex flex-column">
+                 <img src="img/Logo.png" alt="" class="Logo mt-4 ms-3">
+                <nav id="navbar" class="nav-menu navbar">
+                 
+                  <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bi-grid-fill"></i> <span>Dashboard</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bi-person-fill"></i><span>Profile</span></a></li>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="fas fa-users"></i> <span>Profile Finder</span></a></li>
+                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bi-file-text"></i><span>Complaints</span></a></li>
+                    <li><a href="#services" class="nav-link scrollto"> <i class="bx bi-file-text"></i> <span>Users</span></a></li>
+                   
+                    <li><a href="#services" class="nav-link scrollto"><i class="bx bi-gear"></i> <span>Settings</span></a></li>
+                  </ul>
+          
+                </nav>
+                <!-- .nav-menu -->
+              </div>
+              <h5 style="position:absolute;bottom:20px;color:white;font-size:0.6em;left:20px;">© 2020 Marryoo. All rIghts reserved</h5>
+            </header>
+            
+            </div>
+          
+            <div class="dash_bor_main1">
+              <!-- start1-->
+          
+              <div class="dash_par1" style="background:white;">
+          
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="badge rounded-pill badge-notification bg-danger">8</span>
+          
+                  <div class="dash_brd_img1">
+                   <img src="img/malik3.jpg">
+                   <i class="fa-solid  btn dropdown-toggle" data-bs-toggle="dropdown">
+                     <div class="dropdown">
+                     <ul class="dropdown-menu">                   
+                       <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-user fa-2sm m-1" style="font-size: 20px;"></i> My Account</a></li>
+                       <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-gear fa-2sm m-1" style="font-size: 20px;"></i> Account Settings</a></li>
+                       <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-right-from-bracket fa-2xs m-1" style="font-size: 20px;"></i> Logout</a></li>
+                     </ul>
+                     </div>
+                   </i>
+                   </div>
+          
+              </div>
+              <i class="bi bi-list fa-solid mobile-nav-toggle fa-bars" id="dashnavclick"></i>
+              <!-- over -->
+          
+              <!-- start2 -->
+              <div class="dash_par2 my-2 px-3"> 
+                   
+                  <h4><span style="color: blue;">1,200</span> Adds in the list</h4>
+                  <input type="search" placeholder="Search" style="height: 21%; width: 21%; border-radius: 12px; position: relative;left: 8%;top: 12px;">
+
+
+                  <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary1" data-bs-toggle="modal" data-bs-target="#myModal">
+Filter
+</button>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Filter</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      <form action="">
+        <label for="">ID</label>
+        <br>
+        <input type="text" placeholder="placeholder">
+        <br>
+        <label for="">Name</label>
+        <br>
+        <input type="text" placeholder="placeholder">
+        <br>
+        <label>Add tipe</label>
+        <br>
+        <select>
+          <option>select</option>
+        </select>
+        <br>
+        <label>Status</label>
+        <br>
+        <select>
+          <option style="width: 50px;">select</option>
+        </select>
+      </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <div class="local_admin_edi_subbtn my-4">
+      
+          <button type="submit">Submit</button>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="reset">Reset</button>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+           
+          
+                  <button class="btn dropdown-toggle" data-bs-toggle="dropdown">Add New <i class="fa-solid fa-file-excel"></i>
+                  
+                 </button>
+          
+              </div>
+
+
+              <!-- nav -->
+              <div class="container mt-3">
+                
+                <!-- Nav pills -->
+                <ul class="nav nav-pills " role="tablist" style="background-color: aliceblue;">
+                  <li class="nav-item m-2">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#home">All</a>
+                  </li>
+                  <li class="nav-item m-2">
+                    <a class="nav-link" data-bs-toggle="pill" href="#menu1">Active</a>
+                  </li>
+                  <li class="nav-item m-2">
+                    <a class="nav-link" data-bs-toggle="pill" href="#menu2">Deactive</a>
+                  </li>
+                  <li class="nav-item m-2">
+                    <a class="nav-link" data-bs-toggle="pill" href="#menu3">Closed</a>
+                  </li>
+                </ul>
+              
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div id="home" class="container tab-pane active"><br>
+
+                  
+                    <!-- start -->
+                    <div class="row " style="background-color: whitesmoke;">
+                      <div class="col-md-2">
+                        <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+                      </div>
+                      <div class="col-md-3 my-2" >
+                       <div class="mf mx-2">
+                          <h5>Ad 01</h5>
+                          <p>Banner Ad</p>
+                          <p>10 January, 2021</p>
+                          <p>Status: Deactivate</p>
+                        </div>
+                          <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+                          <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+                        
+                      </div>
+                      <div class="col-lg-7 ">
+                        <div class="row my-3">
+                          <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+                          <h5 style="color: blue;">900</h5>
+                          <p>Views</p>
+                          </div>
+                          <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+                            <h5 style="color: blue;">100</h5>
+                            <p>Balance Amount</p>
+                          </div>
+                          <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+                            <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+                            <p>Coin(0.5/)</p>
+                          </div>
+                        </div>
+                        <h6 class="mx-2" style="text-align: end; color: red;">Close Ad</h6>
+                      </div>
+                     </div><br>
+                    <!-- over -->
+
+<!-- start -->
+<div class="row " style="background-color:whitesmoke;">
+  <div class="col-md-2">
+    <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+   
+  </div>
+  <div class="col-md-3 my-2" >
+    <div class="mf mx-2">
+      <h5>Ad 01</h5>
+      <p>Banner Ad</p>
+      <p>10 January, 2021</p>
+      <p>Status: Deactivate</p>
+    </div>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+  </div>
+  <div class="col-lg-7 ">
+    <div class="row my-3">
+      <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+      <h5 style="color: blue;">900</h5>
+      <p>Views</p>
+      </div>
+      <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: blue;">100</h5>
+        <p>Balance Amount</p>
+      </div>
+      <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+        <p>Coin(0.5/)</p>
+      </div>
+    </div>
+    <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+  </div>
+ </div><br>
+<!-- over -->
+
+
+<!-- start -->
+<div class="row " style="background-color:whitesmoke;">
+  <div class="col-md-2">
+    <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+   
+  </div>
+  <div class="col-md-3 my-2" >
+    <div class="mf mx-2">
+      <h5>Ad 01</h5>
+      <p>Banner Ad</p>
+      <p>10 January, 2021</p>
+      <p>Status: Deactivate</p>
+    </div>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+    
+  </div>
+  <div class="col-lg-7 ">
+    <div class="row my-3">
+      <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+      <h5 style="color: blue;">900</h5>
+      <p>Views</p>
+      </div>
+      <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: blue;">100</h5>
+        <p>Balance Amount</p>
+      </div>
+      <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+        <p>Coin(0.5/)</p>
+      </div>
+    </div>
+    <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+  </div>
+ </div><br>
+<!-- over -->
+
+
+<!-- start -->
+<div class="row " style="background-color:whitesmoke;">
+  <div class="col-md-2">
+    <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+   
+  </div>
+  <div class="col-md-3 my-2" >
+    <div class="mf mx-2">
+      <h5>Ad 01</h5>
+      <p>Banner Ad</p>
+      <p>10 January, 2021</p>
+      <p>Status: Deactivate</p>
+    </div>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+  </div>
+  <div class="col-lg-7 ">
+    <div class="row my-3">
+      <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+      <h5 style="color: blue;">900</h5>
+      <p>Views</p>
+      </div>
+      <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: blue;">100</h5>
+        <p>Balance Amount</p>
+      </div>
+      <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+        <p>Coin(0.5/)</p>
+      </div>
+    </div>
+    <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+  </div>
+ </div><br>
+<!-- over -->
+
+
+                  </div>
+                  <div id="menu1" class="container tab-pane fade"><br>
+
+                    <!-- start -->
+                   <div class="row " style="background-color: whitesmoke;">
+                    <div class="col-md-2">
+                      <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+                     
+                    </div>
+                    <div class="col-md-3 my-2" >
+                      <div class="mf mx-2">
+                        <h5>Ad 01</h5>
+                        <p>Banner Ad</p>
+                        <p>10 January, 2021</p>
+                        <p>Status: Deactivate</p>
+                      </div>
+                        <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+                        <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+                      
+                    </div>
+                    <div class="col-lg-7 ">
+                      <div class="row my-3">
+                        <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+                        <h5 style="color: blue;">900</h5>
+                        <p>Views</p>
+                        </div>
+                        <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+                          <h5 style="color: blue;">100</h5>
+                          <p>Balance Amount</p>
+                        </div>
+                        <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+                          <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+                          <p>Coin(0.5/)</p>
+                        </div>
+                      </div>
+                      <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+                    </div>
+                   </div><br>
+                    <!-- over -->
+
+                    <!-- start -->
+                    <div class="row " style="background-color:whitesmoke;">
+                      <div class="col-md-2">
+                        <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+                       
+                      </div>
+                      <div class="col-md-3 my-2" >
+                        <div class="mf mx-2">
+                          <h5>Ad 01</h5>
+                          <p>Banner Ad</p>
+                          <p>10 January, 2021</p>
+                          <p>Status: Deactivate</p>
+                        </div>
+                          <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+                          <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+                        
+                      </div>
+                      <div class="col-lg-7 ">
+                        <div class="row my-3">
+                          <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+                          <h5 style="color: blue;">900</h5>
+                          <p>Views</p>
+                          </div>
+                          <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+                            <h5 style="color: blue;">100</h5>
+                            <p>Balance Amount</p>
+                          </div>
+                          <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+                            <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+                            <p>Coin(0.5/)</p>
+                          </div>
+                        </div>
+                        <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+                      </div>
+                     </div><br>
+                    <!-- over -->
+
+
+                  </div>
+                  <div id="menu2" class="container tab-pane fade"><br>
+                    
+<!-- start -->
+<div class="row " style="background-color:whitesmoke;">
+  <div class="col-md-2">
+    <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+   
+  </div>
+  <div class="col-md-3 my-2" >
+    <div class="mf mx-2">
+      <h5>Ad 01</h5>
+      <p>Banner Ad</p>
+      <p>10 January, 2021</p>
+      <p>Status: Deactivate</p>
+    </div>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+    
+  </div>
+  <div class="col-lg-7 ">
+    <div class="row my-3">
+      <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+      <h5 style="color: blue;">900</h5>
+      <p>Views</p>
+      </div>
+      <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: blue;">100</h5>
+        <p>Balance Amount</p>
+      </div>
+      <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+        <p>Coin(0.5/)</p>
+      </div>
+    </div>
+    <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+  </div>
+ </div><br>
+<!-- over -->
+
+
+<!-- start -->
+<div class="row " style="background-color:whitesmoke;">
+  <div class="col-md-2">
+    <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+   
+  </div>
+  <div class="col-md-3 my-2" >
+    <div class="mf mx-2">
+      <h5>Ad 01</h5>
+      <p>Banner Ad</p>
+      <p>10 January, 2021</p>
+      <p>Status: Deactivate</p>
+    </div>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+    
+  </div>
+  <div class="col-lg-7 ">
+    <div class="row my-3">
+      <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+      <h5 style="color: blue;">900</h5>
+      <p>Views</p>
+      </div>
+      <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: blue;">100</h5>
+        <p>Balance Amount</p>
+      </div>
+      <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+        <p>Coin(0.5/)</p>
+      </div>
+    </div>
+    <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+  </div>
+ </div><br>
+<!-- over -->
+
+
+                  </div>
+
+                  <div id="menu3" class="container tab-pane fade"><br>
+                   <!-- start -->
+                   <div class="row " style="background-color: whitesmoke;">
+                    <div class="col-md-2">
+                      <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+                     
+                    </div>
+                    <div class="col-md-3 my-2" >
+                      <div class="mf mx-2">
+                        <h5>Ad 01</h5>
+                        <p>Banner Ad</p>
+                        <p>10 January, 2021</p>
+                        <p>Status: Deactivate</p>
+                      </div>
+                        <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+                        <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+                      
+                    </div>
+                    <div class="col-lg-7 ">
+                      <div class="row my-3">
+                        <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+                        <h5 style="color: blue;">900</h5>
+                        <p>Views</p>
+                        </div>
+                        <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+                          <h5 style="color: blue;">100</h5>
+                          <p>Balance Amount</p>
+                        </div>
+                        <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+                          <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+                          <p>Coin(0.5/)</p>
+                        </div>
+                      </div>
+                      <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+                    </div>
+                   </div><br>
+                  <!-- over -->
+<!-- start -->
+<div class="row " style="background-color: whitesmoke;">
+  <div class="col-md-2">
+    <i class="fa-solid fa-user fa-xxl m-3" style="font-size: 110px;"></i>
+   
+  </div>
+  <div class="col-md-3 my-2" >
+    <div class="mf mx-2">
+      <h5>Ad 01</h5>
+      <p>Banner Ad</p>
+      <p>10 January, 2021</p>
+      <p>Status: Deactivate</p>
+    </div>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Copy Ad ID</button>
+      <button  class="m-2" type="button" style="border-radius: 12px;">Visibility</button>
+    
+  </div>
+  <div class="col-lg-7 ">
+    <div class="row my-3">
+      <div class="col-sm-4 m-2 " style="border: 2px solid gainsboro;  width: 30%;">
+      <h5 style="color: blue;">900</h5>
+      <p>Views</p>
+      </div>
+      <div class="col-sm-4 m-2 "  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: blue;">100</h5>
+        <p>Balance Amount</p>
+      </div>
+      <div class="col-sm-4 m-2"  style="border: 2px solid gainsboro; width: 30%;">
+        <h5 style="color: rgb(12, 241, 80);"> 4</h5>
+        <p>Coin(0.5/)</p>
+      </div>
+    </div>
+    <h6 class="m-2" style="text-align: end; color: red;">Close Ad</h6>
+  </div>
+ </div><br>
+<!-- over -->
+
+                  </div>
+
+                </div>
+              </div>
+              <!-- over -->
+              
+             
+            </div>
+            
+             
+           </div>
+          
+           <script src="js/main.js"></script>
+           
+          
+
+    </body>
+</html>

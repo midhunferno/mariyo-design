@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+   
+    .mark {
+    width: 30%;
+    background-color: #1964c6bf;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+input#m5,#m1,#m2,#m3,#m4,#m6,#m7 {
+    /* outline: none; */
+    border-radius: 10px;
+    border: none;
+    box-shadow:-8px 2px 11px rgb(255,255,0.1), 10px -2px 9px rgba(0,0,0,0.2)
+}
+label {
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+}
+button.ml-2.mt-3,button {
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    background-color: #df934cf7;
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+}
+</style>
+<body>
+    <div class="container">
+    <div class="mark m-5">
+    <center>
+    <label for="">Name</label>
+    <div><input type="text" id="m1"></div>
+    
+    <label for="">Email</label>
+    <div><input type="email" id="m2" class="bt"></div>
+    
+    <label for="">Tamil </label>
+    <div><input type="number" id="m3" class="bt"></div>
+    
+    <label for="">English </label>
+    <div><input type="number" id="m4" class="bt"></div>
+    
+    <label for="">Maths  </label>
+    <div><input type="number" id="m5" class="bt"></div>
+    
+    <label for="">Social </label>
+    <div><input type="number" id="m6" class="bt"></div>
+    
+    <label for="">Malayalam </label>
+    <div><input type="number" id="m7" class="bt"></div>
+    <div><button type="submit" onclick="fun1()" class="ml-2 mt-3">submit</button>
+    <button type="submit" onclick="fun2()"> View</button></div></center>
+        </div>
+        <p id="f1"></p>
+    </div>
+</body>
+<script>
+   
+  
+      //  add mark
+        var names=[]
+        var email=[]
+        var tamil=[]
+        var english=[]
+        var maths=[]
+        var social=[]
+        var malayalam=[]
+        var tota=[]
+        var averag=[]
+        var result=[]
+        var graid=[]
+        var text;
+
+ function fun1(){
+
+     var var1=document.getElementById("m1").value;
+     var var2=document.getElementById("m2").value;
+     var var3=document.getElementById("m3").value;
+     var var4=document.getElementById("m4").value;
+     var var5=document.getElementById("m5").value;
+     var var6=document.getElementById("m6").value;
+     var var7=document.getElementById("m7").value;
+
+        names.push(var1)
+        email.push(var2)
+        tamil.push(var3)
+        english.push(var4)
+        maths.push(var5)
+        social.push(var6)
+        malayalam.push(var7)
+
+        total= parseInt(var3)+parseInt(var4)+parseInt(var5)+parseInt(var6)+parseInt(var7);
+        average=total/5;
+
+        tota.push(total)
+        averag.push(average)
+        // graid 
+         
+        if((var3<35)||(var4<35)||(var5<35)||(var6<35)||(var7<35)){
+         var reslt=document.getElementById("f1").innerHTML="fail";
+        }
+        else if((var3>35)&&(var4>35)&&(var5>35)&&(var6>35)&&(var7>35)){
+            var reslt=document.getElementById("f1").innerHTML="pass";
+        }
+        result.push(reslt)
+       
+        if(var3>=90&&var4>=90&&var5>=90&&var6>=90&&var7>=90){
+            var grd=document.getElementById("f1").innerHTML="A+";
+        }
+        else if(var3<35||var4<35||var5<35||var6<35||var7<35){
+            var grd=document.getElementById("f1").innerHTML="E";
+        }
+        else if(var3>80&&var3<90||var4>80&&var4<90||var5>80&&var5<90||var6>80&&var5<90||var6>80&&var6<90||var7>80&&var7<90){
+            var grd=document.getElementById("f1").innerHTML="A";
+        }
+        else if(var3>70&&var3<80||var4>70&&var4<80||var5>70&&var5<80||var6>70&&var5<80||var6>70&&var6<80||var7>70&&var7<80){
+            var grd=document.getElementById("f1").innerHTML="B+";
+        }
+        else if(var3>60&&var3<70||var4>600&&var4<70||var5>60&&var5<70||var6>60&&var5<70||var6>60&&var6<70||var7>60&&var7<70){
+             var grd=document.getElementById("f1").innerHTML="B";
+        }
+        else if(var3>50&&var3<60||var4>50&&var4<60||var5>50&&var5<60||var6>50&&var5<60||var6>50&&var6<90||var7>50&&var7<60){
+            var grd=document.getElementById("f1").innerHTML="C+";
+        }
+        else if(var3>40&&var3<50||var4>40&&var4<50||var5>40&&var5<50||var6>40&&var5<50||var6>40&&var6<50||var7>40&&var7<50){
+            var grd=document.getElementById("f1").innerHTML="D+";
+        }
+        else if(var3>35&&var3<40||var4>35&&var4<40||var5>35&&var5<40||var6>35&&var5<40||var6>35&&var6<40||var7>35&&var7<40){
+            var grd=document.getElementById("f1").innerHTML="D";
+        }
+        graid.push(grd)
+        document.getElementById("m1").value=""
+        document.getElementById("m2").value=""
+        document.getElementById("m3").value=""
+        document.getElementById("m4").value=""
+        document.getElementById("m5").value=""
+        document.getElementById("m6").value=""
+        document.getElementById("m7").value=""
+
+     
+    }
+ function fun2(){
+       
+        text="<table border=1px>"+"<thead>"+"<th>"+"S:NO"+"</th>"+ 
+                "<th>"+"Name"+"</th>"+"<th>"+"Email"+"</th>"+"<th>"+"Tamil"+"</th>"+"<th>"+"English"+"</th>"+ 
+                "<th>"+"Maths"+"</th>"+"<th>"+"Social"+"</th>"+"<th>"+"Malayalam"+"</th>"+"<th>"+"Total"+"</th>"+ 
+                "<th>"+"Average"+"</th>"+"<th>"+"Graid"+"</th>"+"<th>"+"Result"+"</th>"+"<th>"+"Action"+"</th>"+ "</thead><tbody>";
+        for(i=0;i<names.length;i++){
+            text+="<tr>"+"<td>"+(i+1)+"</td>"+"<td>"+names[i]+"</td>"+"<td>"+email[i]+"</td>"+"<td>"+tamil[i]+"</td>"+ 
+                 "<td>"+english[i]+"</td>"+"<td>"+maths[i]+"</td>"+"<td>"+social[i]+"</td>"+"<td>"+malayalam[i]+"</td>"+ 
+                 "<td>"+tota[i]+"</td>"+"<td>"+averag[i]+"</td>"+"<td>"+graid[i]+"</td>"+"<td>"+result[i]+"</td>"+
+                 "<td>"+"<button onclick=fun4("+i+")>"+"Edit"+"</button> &nbsp;"+"<button onclick=fun5("+i+")>"+"Update"+ "</button> &nbsp;"+
+                 "<button onclick= fun3("+i+")>"+"Delete"+ "</button>"+ "</td>"+"</tr>";
+                
+        }
+        
+        text+="</tbody></table>"
+
+        document.getElementById("f1").innerHTML=text;
+    }
+    function fun3(i){
+        names.splice(i,1)
+        email.splice(i,1)
+        tamil.splice(i,1)
+        english.splice(i,1)
+        maths.splice(i,1)
+        social.splice(i,1)
+        malayalam.splice(i,1)
+        tota.splice(i,1)
+        averag.splice(i,1)
+        result.splice(i,1)
+
+        fun2()
+    }
+function fun4(i){
+    document.getElementById("m1").value=names[i]
+    document.getElementById("m2").value=email[i]
+    document.getElementById("m3").value=tamil[i]
+    document.getElementById("m4").value=english[i]
+    document.getElementById("m5").value=maths[i]
+    document.getElementById("m6").value=social[i]
+    document.getElementById("m7").value=malayalam[i]
+    
+fun2()
+}
+// delete 
+function fun5(i){
+     var var1=document.getElementById("m1").value;
+     var var2=document.getElementById("m2").value;
+     var var3=document.getElementById("m3").value;
+     var var4=document.getElementById("m4").value;
+     var var5=document.getElementById("m5").value;
+     var var6=document.getElementById("m6").value;
+     var var7=document.getElementById("m7").value;
+    
+        names.splice(i,1,var1)
+        email.splice(i,1,var2)
+        tamil.splice(i,1,var3)
+        english.splice(i,1,var4)
+        maths.splice(i,1,var5)
+        social.splice(i,1,var6)
+        malayalam.splice(i,1,var7)
+        total= parseInt(var3)+parseInt(var4)+parseInt(var5)+parseInt(var6)+parseInt(var7);
+        average=total/5;
+        tota.splice(i,1,total)
+        averag.splice(i,1,average)
+        if((var3<35)||(var4<35)||(var5<35)||(var6<35)||(var7<35)){
+         var reslt=document.getElementById("f1").innerHTML="fail";
+        }
+        else if((var3>35)&&(var4>35)&&(var5>35)&&(var6>35)&&(var7>35)){
+            var reslt=document.getElementById("f1").innerHTML="pass";
+        }
+        result.splice(i,1,reslt)
+        if(var3>=90&&var4>=90&&var5>=90&&var6>=90&&var7>=90){
+            var grd=document.getElementById("f1").innerHTML="A+";
+        }
+        else if(var3<=35||var4<=35||var5<=35||var6<=35||var7<=35){
+            var grd=document.getElementById("f1").innerHTML="E";
+        }
+        else if((var3>=80&&var3<=90)||(var4>=80&&var4<=90)||(var5>=80&&var5<=90)||(var6>=80&&var5<=90)||(var6>=80&&var6<=90)||(var7>=80&&var7<=90)){
+            var grd=document.getElementById("f1").innerHTML="A";
+        }
+        else if((var3>=70&&var3<=80)||(var4>=70&&var4<=80)||(var5>=70&&var5<=80)||(var6>=70&&var5<=80)||(var6>=70&&var6<=80)||(var7>=70&&var7<=80)){
+            var grd=document.getElementById("f1").innerHTML="B+";
+        }
+        else if((var3>=60&&var3<=70)||(var4>=60&&var4<=70)||(var5>=60&&var5<=70)||(var6>=60&&var5<=70)||(var6>=60&&var6<=70)||(var7>=60&&var7<=70)){
+             var grd=document.getElementById("f1").innerHTML="B";
+        }
+        else if((var3>=50&&var3<=60)||(var4>=50&&var4<=60)||(var5>=50&&var5<=60)||(var6>=50&&var5<=60)||(var6>=50&&var6<=90)||(var7>=50&&var7<=60)){
+            var grd=document.getElementById("f1").innerHTML="C+";
+        }
+        else if((var3>=40&&var3<=50)||(var4>=40&&var4<=50)||(var5>=40&&var5<=50)||(var6>=40&&var5<=50)||(var6>=40&&var6<=50)||(var7>=40&&var7<=50)){
+            var grd=document.getElementById("f1").innerHTML="D+";
+        }
+        else if((var3>=35&&var3<=40)||(var4>=35&&var4<=40)||(var5>=35&&var5<=40)||(var6>=35&&var5<=40)||(var6>=35&&var6<=40)||(var7>=35&&var7<=40)){
+            var grd=document.getElementById("f1").innerHTML="D";
+        }
+        graid.splice(i,1,grd)
+        document.getElementById("m1").value=""
+        document.getElementById("m2").value=""
+        document.getElementById("m3").value=""
+        document.getElementById("m4").value=""
+        document.getElementById("m5").value=""
+        document.getElementById("m6").value=""
+        document.getElementById("m7").value=""
+fun2()
+}
+</script>
+</html>

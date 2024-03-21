@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button.\`nb\` {
+    width: 65px;
+    height: 65px;
+    background-color: black;
+}
+button.\`nb2\` {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+}
+button.\`nb\`:hover,button.\`nb2\`:hover{
+/* background-color:rgb(240, 11, 221) */
+ border: solid rgb(240, 11, 221);
+}
+    </style>
+</head>
+<body>
+    <button type="submit" onclick="fun()" id="tm">click me</button>
+    <p id="m1"></p>
+</body>
+<script>
+function fun(){
+    text="";
+    for(i=1;i<=8;i++){
+        for(j=1;j<=8;j++){
+            if((i + j) % 2 == 0){
+            text+="<button class=`nb2`></button>"
+
+        }
+        else{
+            text+="<button class=`nb`></button>" 
+         }
+          
+         }
+         
+        
+        text+="<br>"
+    }
+    document.getElementById("m1").innerHTML=text;
+}
+</script>
+</html>
